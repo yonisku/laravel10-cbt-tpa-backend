@@ -21,7 +21,7 @@
 
             <li class="menu-header">Manage Question</li>
             <li class="nav-item dropdown">
-                <a href="{{ route('user.index') }}" class="nav-link">
+                <a href="{{ route('question.index') }}" class="nav-link">
                     <i class="fas fa-fire"></i><span>Question</span>
                 </a>
             </li>

@@ -1,5 +1,6 @@
 <?php
 
+use App\Http\Controllers\Admin\QuestionController;
 use App\Http\Controllers\Admin\UserController;
 use Illuminate\Support\Facades\Route;
 
@@ -23,6 +24,7 @@ Route::middleware(['auth'])->group(function () {
         return view('pages.dashboard');
     })->name('home');
     Route::resource('user', UserController::class);
+    Route::resource('question', QuestionController::class);
 });
 // Route::get('/login', function () {
 //     return view('pages.auth.login');
