@@ -21,5 +21,7 @@ class UserSeeder extends Seeder
             'role' => 'ADMIN',
             'password' => Hash::make('password')
         ]);
+
+        User::factory(9)->create();
     }
 }

@@ -44,7 +44,8 @@ class UserController extends Controller
         $data['password'] = Hash::make($request->password);
         User::create($data);
 
-        Session::flash('message', ['Well Done!', 'User has been successfully created!']);
+        $notification = ['Well Done!', 'User has been successfully created!'];
+        Session::flash('message', $notification);
         return to_route('user.index');
     }
 
@@ -72,7 +73,8 @@ class UserController extends Controller
         $data = $request->validated();
         $user->update($data);
 
-        Session::flash('message', ['Well Done!', 'User data has been successfully updated!']);
+        $notification = ['Well Done!', 'User data has been successfully updated!'];
+        Session::flash('message', $notification);
         return to_route('user.index');
     }
 

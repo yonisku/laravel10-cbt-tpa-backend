@@ -25,7 +25,7 @@ class UserStoreRequest extends FormRequest
             'name' => 'required|max:100|min:3',
             'email' => 'required|email|unique:users,email',
             'phone' => 'required|alpha_dash',
-            'password' => 'required|min:8',
+            'password' => 'required|min:8|confirmed',
             'password_confirmation' => 'required|same:password',
             'role' => 'required|in:ADMIN,STAFF,USER'
         ];
