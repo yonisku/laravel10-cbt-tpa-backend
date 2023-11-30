@@ -16,8 +16,8 @@ class DatabaseSeeder extends Seeder
         $this->call([
             UserSeeder::class,
             QuestionSeeder::class,
-            ExamSeeder::class,
-            ExamQuestionListSeeder::class
+            //ExamSeeder::class,
+            //ExamQuestionListSeeder::class
         ]);
     }
 }

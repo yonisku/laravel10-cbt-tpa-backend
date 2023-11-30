@@ -33,8 +33,14 @@ Route::middleware('auth:sanctum')->group(function () {
     });
 
     //Logout
-    Route::post('/logout', [AuthController::class, 'logout']); 
+    Route::post('/logout', [AuthController::class, 'logout']);
 
     // Create Exam
     Route::post('/create-exam', [ExamController::class, 'createExam']);
+
+    // Get Exam Question List by Category
+    Route::get('/get-question', [ExamController::class, 'getQuestionListByCategory']);
+
+    // Submit and Check the Answer
+    Route::post('/answer', [ExamController::class, 'answerTheQuestion']);
 });

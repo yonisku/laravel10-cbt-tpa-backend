@@ -18,7 +18,7 @@ return new class extends Migration
             //question_id
             $table->foreignId('question_id')->constrained('questions')->onDelete('cascade');
             //isTrue
-            $table->boolean('isTrue')->nullable;
+            $table->boolean('isTrue')->nullable();
             $table->timestamps();
         });
     }
