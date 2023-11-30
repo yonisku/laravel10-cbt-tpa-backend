@@ -26,6 +26,4 @@ Route::middleware(['auth'])->group(function () {
     Route::resource('user', UserController::class);
     Route::resource('question', QuestionController::class);
 });
-// Route::get('/login', function () {
-//     return view('pages.auth.login');
-// })->name('login');
+

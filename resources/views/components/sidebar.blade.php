@@ -9,7 +9,9 @@
         <ul class="sidebar-menu">
             <li class="menu-header">Dashboard</li>
             <li class="nav-item dropdown">
-                <a href="#" class="nav-link has-dropdown"><i class="fas fa-fire"></i><span>Dashboard</span></a>
+                <a href="{{ route('home') }}" class="nav-link">
+                    <i class="fas fa-fire"></i><span>Dashboard</span>
+                </a>
             </li>
 
             <li class="menu-header">Manage User</li>
